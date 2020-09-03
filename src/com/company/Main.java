@@ -1,6 +1,7 @@
 package com.company;
 
 import java.math.BigInteger;
+import java.util.Objects;
 
 public class Main {
 
@@ -30,21 +31,8 @@ public class Main {
         public double getIm() {
             return im;
         }
-        @Override
-        public boolean equals(Object obj)
-        {
-            if(this == obj)
-                return true;
-            if(obj == null)
-                return false;
-            if(getClass()!=obj.getClass())
-                return false;
-            ComplexNumber other = (ComplexNumber) obj;
-            if (re!=other.re)
-                return false;
-            if(im!=other.im)
-                return false;
-            return true;
-       }
+
+
+
     }
 }
